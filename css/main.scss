@@ -1,0 +1,18 @@
+@import 'common';
+
+// body,html{scroll-behavior: smooth;}
+main{
+  overflow: hidden;
+  clear: both; //header영역에서 혹시 사용된 float속성이 있다면 float속성해제 한다.
+  >#movie{
+    height: 100vh;
+    background: $line_color_g;
+    >video{width: 100%;}
+  }
+  >#top3{height: 1146px; background: #0ff;}
+  >#intro{height: 923px; background: #e9cc58;}
+  >#test_drive{height: 923px; background: #91896c;}
+  >#event{height: 923px; background: #866f12;}
+  >#buy{height: 923px; background: #5a4a0b;}
+  >#customer{height: 923px; background: #493b00;}
+}
