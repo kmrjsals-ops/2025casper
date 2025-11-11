@@ -10,10 +10,9 @@ $box_center:0 auto;
   z-index: 10000;
   top: 50%;left: 50%;
   transform: translate(-50%,-50%);
-  border: 1px solid #000;
   .modal_b{
     line-height: 50px;
-    button{
+    #c_btn{
       float:right;
       margin-right: 10px;
       top: 30px;
@@ -127,7 +126,7 @@ footer{
       width: 150px;
     }
   }
-  .f_lnb{}
+
   .f_lnb > ul{
     display: flex;
     padding-top: 15px;

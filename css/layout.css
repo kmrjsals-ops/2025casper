@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
 body {
-  font-family: "Noto Sans", sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
   font-size: 12px;
   color: #333;
   background: #fff;
@@ -34,12 +34,11 @@ address {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  border: 1px solid #000;
 }
 .modal .modal_b {
   line-height: 50px;
 }
-.modal .modal_b button {
+.modal .modal_b #c_btn {
   float: right;
   margin-right: 10px;
   top: 30px;
