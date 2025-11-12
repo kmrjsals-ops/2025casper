@@ -1,4 +1,4 @@
-//@import 'common';
+//@import 'common','layout';
 @use 'common' as *;
 
 //마진값 설정
@@ -59,8 +59,7 @@ main{
   }
 
   > #event{height:923px;background:$line_color_g;}
-  > #buy{height:923px;background:#c59e04;}
-  > #customer{height:923px;background:#a1976e;}
+
 }
 
 // 콘텐츠 제목서식
@@ -161,7 +160,7 @@ main{
   display:inline-block;
   width:56px;height:40px;
   text-indent:-9999px;
-  float:left;
+
   margin-right:10px;
 }
 .kaki{background:#494b3e;}
@@ -290,3 +289,133 @@ main.scss
   }
 
 }
+
+//6. 구매하기
+#buy{
+  text-align: center;
+  >.p01{
+    font-size: $t_size_m;
+    line-height: 50px;
+  }
+  h3{
+    font-size: $t_size_t2;
+    padding: 40px 0px 20px 0px;
+    font-weight: bold;
+  }
+  .t_color{color: $txt_color4;}
+  .buy_info_list{
+    display: grid;
+    width: 1200px;
+    margin: 0 auto;
+    grid-template-columns: repeat(3,33.333333333%);
+    >li{
+      padding-top: 50px;
+      >h4{
+        font-size: 18px;
+        font-weight: bold;
+      }
+      >img{
+        width: 80px;
+        padding: 15px 0px;
+      }
+      >.p02{
+        line-height: 20px;
+      }
+    }
+    >li:last-child{
+      //마지막 li 영상 컨텐츠라서 병합
+      grid-area: 3/1/4/4;
+    }
+  }
+}
+
+//7. 고객지원
+#customer{
+  background: $bg_color_light_g;
+  height: 800px;
+  >article{
+    padding: 24px 0px;
+    width: 1200px;
+    margin: 15px auto;
+    background: $txt_color2;
+    >h3{
+      font-size: 18px;
+      text-align: center;
+      padding: 60px 0px 20px 0px;
+      font-weight: bold;
+    }
+    .ars_left{border-right: 1px solid $line_color_g;}
+    .ars_left, .ars_right{
+      width: 50%;
+      padding: 20px 30px;
+      box-sizing: border-box;
+      float: left;
+      display: flex;
+      justify-content: space-around;
+      >p{
+        display: flex;
+        flex-direction: column;
+        line-height: 30px;
+        text-align: center;
+        align-items: center;
+        >a{color: $nav_color02;}
+      }
+      >dl{line-height: 24px;}
+      dl > dt{font-weight: bold;}
+    }
+    strong{
+      font-weight: 500;
+      font-size: $t_size_m;
+    }
+    //아이콘 배경서식
+    .car_icon, .member_icon{
+      background: url(../images/bg-support-ars.png);
+      display: inline-block;
+      height: 46px;
+      text-indent: -9999px;
+      margin-top: 30px;
+    }
+    .car_icon{width: 75px;}
+    .member_icon{
+      width: 60px;
+      background-position: -90px 0px;transform: translateY(-30px);
+    }
+  }
+  .cs_etc{
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    width: 1200px;
+    >li{
+      position: relative;
+      width: 252px;
+      background: $txt_color2;
+      h3{
+        font-size: $t_size_m;
+        font-weight: bold;
+        padding: 20px 10px;
+      }
+      p{
+        font-weight: 500;
+        padding: 20px 10px;
+      }
+      a{
+        padding: 0px 10px;
+        color: $nav_color02;
+      }
+      .btn01{
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%)
+      }
+    }
+  }
+}
+//float 속성 해제
+#customer article::after{
+  clear: both;
+  content: "";
+  display: block;
+}
+
