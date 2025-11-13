@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 12px;
+  color: #333;
+  background: #fff;
+  overflow-x: hidden;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+address {
+  font-style: normal;
+}
+
+.h_on {
+  background: rgba(255, 255, 255, 0.9) !important;
+}
+
+.h_txt_color {
+  color: #333 !important;
+}
+
+header {
+  position: static;
+}
+
+header nav .gnb a {
+  color: #333;
+  font-size: 16px;
+}
+
+header > .nav_icon span.fas {
+  color: #333;
+}
+
+main {
+  background: #ccc;
+  height: 100vh;
+}
+
+legend {
+  font-weight: bold;
+}
+
+.form_register a {
+  text-decoration: none;
+  color: #333;
+  border-right: 1px solid #333;
+  padding: 5px 20px;
+}
+
+.form_register a:last-child {
+  border: none;
+}
+
+#id_txt, #pw_txt {
+  background: #fff;
+  border-radius: 0px;
+  border: none;
+  color: #333;
+}
+
+.check {
+  transform: translateX(-108px);
+}
+
+#login_btn {
+  border-radius: 0px;
+  background: #225499;
+}/*# sourceMappingURL=sub.css.map */

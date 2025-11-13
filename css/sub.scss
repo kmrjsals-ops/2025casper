@@ -1,0 +1,44 @@
+@charset "UTF-8";
+@import 'common';
+//sub.scss
+//서브페이지 헤더, 푸터 공통서식
+
+header{
+  position: static;
+}
+
+//메인메뉴 서식
+header nav .gnb a{
+  color: $txt_color1;
+  font-size: $t_size_m;
+}
+
+header > .nav_icon span.fas{
+    color: $txt_color1;
+  }
+main{
+  background: #ccc;
+  height: 100vh;
+}
+//로그인 서식
+legend{font-weight: bold;}
+.form_register a{
+  text-decoration: none;
+  color: #333;
+  border-right: 1px solid #333;
+  padding: 5px 20px;
+}
+.form_register a:last-child{
+  border: none;
+}
+#id_txt, #pw_txt{
+  background: #fff;
+  border-radius: 0px;
+  border: none;
+  color: #333;
+}
+.check{transform: translateX(-108px);}
+#login_btn{
+  border-radius: 0px;
+  background: $txt_color3;
+}

@@ -70,7 +70,7 @@ header > .nav_icon {
   right: 10px;
   font-size: 22px;
 }
-header > .nav_icon span:last-child {
+header > .nav_icon > span:last-child {
   display: none;
 }
 header > .nav_icon span.fas {
@@ -174,7 +174,6 @@ footer > .f_inner {
   display: flex;
   flex-wrap: wrap;
   align-content: flex-end;
-  border: 1px solid #ccc;
 }
 footer > .f_inner h2 {
   padding-top: 10px;

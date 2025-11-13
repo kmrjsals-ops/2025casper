@@ -38,13 +38,15 @@ header{
     top: 24px; right: 10px;
     font-size: $t_size_t1;
   }
-  >.nav_icon span:last-child{display: none;}
+  >.nav_icon > span:last-child{display: none;}
   >.nav_icon span.fas{
     font-size: $t_size_t1;
     color: $txt_color2;
     cursor: pointer;
   }
-  >.icon1{right: 3%;}
+  >.icon1{
+    right: 3%;
+  }
   >.icon2{right: 1%;}
 }
 
@@ -126,7 +128,6 @@ footer{
     display: flex;
     flex-wrap: wrap;
     align-content: flex-end;
-    border: 1px solid #ccc;
     h2{
       padding-top: 10px;
       width: 150px;

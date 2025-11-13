@@ -71,7 +71,7 @@ main > #movie > .m_info a:first-of-type {
 }
 main > #movie > #next_btn {
   display: inline-block;
-  text-indent: -9999px;
+  font-size: 0px;
   position: absolute;
   bottom: 40px;
   left: 50%;
@@ -430,17 +430,17 @@ main.scss #intro {
 }
 #customer .cs_etc > li {
   position: relative;
-  width: 252px;
+  width: 280px;
   background: #fff;
 }
 #customer .cs_etc > li h3 {
   font-size: 16px;
   font-weight: bold;
-  padding: 20px 10px;
+  padding: 20px 30px;
 }
 #customer .cs_etc > li p {
   font-weight: 500;
-  padding: 20px 10px;
+  padding: 20px 30px;
 }
 #customer .cs_etc > li a {
   padding: 0px 10px;
@@ -451,6 +451,10 @@ main.scss #intro {
   bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
+  border: 1px solid #052B58;
+  background: #052B58;
+  color: #fff;
+  padding: 10px 10px;
 }
 
 #customer article::after {

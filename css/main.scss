@@ -50,7 +50,7 @@ main{
     > #next_btn{
       // 글자 숨기기
       display:inline-block;
-      text-indent:-9999px;
+      font-size: 0px;
       position:absolute;
       bottom:40px;left:50%;
       transform: translate(-50%, -50%);
@@ -287,7 +287,6 @@ main.scss
       border-radius: 10px;
     }
   }
-
 }
 
 //6. 구매하기
@@ -388,16 +387,16 @@ main.scss
     width: 1200px;
     >li{
       position: relative;
-      width: 252px;
+      width: 280px;
       background: $txt_color2;
       h3{
         font-size: $t_size_m;
         font-weight: bold;
-        padding: 20px 10px;
+        padding: 20px 30px;
       }
       p{
         font-weight: 500;
-        padding: 20px 10px;
+        padding: 20px 30px;
       }
       a{
         padding: 0px 10px;
@@ -407,7 +406,11 @@ main.scss
       position: absolute;
       bottom: 20px;
       left: 50%;
-      transform: translateX(-50%)
+      transform: translateX(-50%);
+      border:1px solid $txt_color5;
+      background: $txt_color5;
+      color: $txt_color2;
+      padding: 10px 10px;
       }
     }
   }
